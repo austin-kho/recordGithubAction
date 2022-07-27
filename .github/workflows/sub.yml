@@ -21,6 +21,6 @@ jobs:
     - name: DOCKER 확인
       run: docker --version
     - name: KUBECTL 확인
-      run: kubectl version --short
+      run: kubectl version
     - name: HELM 확인
       run: helm version
