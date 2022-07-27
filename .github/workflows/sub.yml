@@ -17,10 +17,10 @@ jobs:
         echo "내 이름은 $NAME 입니다."
         echo "내 이름은 $NAME, 내 아이디는 $ID 입니다.". 제 나이는 $AGE이고, 휴먼: $HUMAN 입니다.
     - name: NODE 확인
-      run: node --version
+      run: node --version & npm --version & yarn --version
     - name: DOCKER 확인
-      run: kubectl version
+      run: docker --version
     - name: KUBECTL 확인
-      run: docker --version & kubectl version & helm version
+      run: kubectl version --short
     - name: HELM 확인
       run: helm version
