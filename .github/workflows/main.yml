@@ -22,6 +22,6 @@ jobs:
     - name: 2. 파이썬 패키지 확인
       run: pip list
     # OS에서 실행할 이름
-    - name: 파이썬 실행
+    - name: 3. 파이썬 실행
     # OS에서 실행할 명령
       run : python test.py
